@@ -32,7 +32,7 @@ exports.handler = function(context, event, callback) {
             case '000':
                 callAmira();
                 break;
-            case '801':
+            case context.PASSCODE:
                 redirectToEnter();
                 break;
             default:
