@@ -8,7 +8,7 @@ exports.handler = function(context, event, callback) {
     // Call Amira!
     let callAmira = function() {
         let phoneNumber = context.AMIRA_PHONE_NUMBER;
-        let dialParams = {'callerId': callerId};
+        let dialParams = {'callerId': callerId, 'timeLimit': 200};
 
         twiml.dial(dialParams, phoneNumber);
     };

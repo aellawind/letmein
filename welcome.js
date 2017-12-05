@@ -1,6 +1,6 @@
 exports.handler = function(context, event, callback) {
     let twiml = new Twilio.twiml.VoiceResponse();
-    let amiraPhoneNumber = context.AMIRA_PHONE_NUMBER;
+    let notifyPhoneNumber = context.NOTIFY_PHONE_NUMBER;
     let callerName = event.SpeechResult || null;
     let notification = 'You have a guest';
 
@@ -16,7 +16,7 @@ exports.handler = function(context, event, callback) {
     twiml.play(null, {digits: 9});
 
     // Notify the relevant parties
-    twiml.sms(notification, {to: '12035074786'});
+    twiml.sms(notification, {to: notifyPhoneNumber});
 
     callback(null, twiml);
 };
