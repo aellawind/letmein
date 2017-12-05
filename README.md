@@ -1,6 +1,8 @@
 # letmein
 
-This repo consists of a set of scripts that hold runtime functions to implement a fancy doorking setup in which the door code calls the Twilio phone number, which then triggers these functions.
+Sometimes you just don't have the time to answer your phone when guests ring you via your building doorking. With Twilio ML it's incredibly easy to add a few short scripts to simplify guest admittance. Let guests in automatically, or ask for a passcode first. You can even get their names and send a notification to your phone.
+
+This repo consists of a set of scripts that hold the 'runtime functions' that implement a fancy doorking setup in which the door code calls the Twilio phone number, which then triggers these functions.
 
 Here is the order of operations:
 - Guest enters apartment code on lobby doorking (ex: 100)
